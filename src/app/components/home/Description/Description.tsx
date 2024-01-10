@@ -11,14 +11,14 @@ export const Description = () => {
     const handleOnClick = () => setBorder(!hasBorder) 
 
     const cx= classNames.bind(styles)
-        const buttonStyles = cx('button',{
-        'button--border':hasBorder
+        const buttonStyles = cx('Description__button',{
+        'Description__button--border':hasBorder
     })
 console.log(buttonStyles)
     
     return(
         <section>
-            <button className={styles.Description__button} onClick={handleOnClick}>
+            <button className={buttonStyles} onClick={handleOnClick}>
                 <div className={styles.Description__imageContainer}>
                     <Image src="/images/descripcion.jpg" alt="descripcion" fill placeholder='blur' blurDataURL={placeholder} />
                 </div>

@@ -11,6 +11,6 @@ export const MainProducts = async () => {
     const products = await getProducts()
     console.log(products)
     return(
-        <h1>Main Products</h1>
+        <h1>Main Products aquiiii</h1>
     )
 }
